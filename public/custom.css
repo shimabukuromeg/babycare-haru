@@ -1,0 +1,57 @@
+.test-img1 {
+  background-image: url(./top.jpg);
+  background-size:cover;
+  height: 500px;
+}
+.container img {
+  max-width:100%;
+  height: auto;
+}
+/* .flex {
+  display: flex;
+} */
+
+/* .btn-bottom01 {
+  position:absolute;
+  bottom:0;
+} */
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* .flex-container {
+  display: flex;
+}
+.flex-container >:nth-child(4) {
+  align-self: flex-end;
+} */
+
+@media (min-width: 992px) {
+  .description {
+    height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description {
+    height: auto;
+  }
+}
+
+.menu {
+  width: 250px;
+}
