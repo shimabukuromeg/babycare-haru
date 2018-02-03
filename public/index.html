@@ -22,23 +22,28 @@
     <!--アイコン -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <!-- jQuery読み込み -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <a class="navbar-brand" href="#">母乳育児相談室 春</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#service-1">Menu</a>
-      <a class="nav-item nav-link" href="#price-1">Price</a>
-      <a class="nav-item nav-link" href="#access-1">Access</a>
-      <a class="nav-item nav-link" href="#contact-1">Contact</a>
+    <a class="navbar-brand" href="#">母乳育児相談室 春</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#service-1" id="top-btn">Menu</a>
+        <a class="nav-item nav-link" href="#price-1">Price</a>
+        <a class="nav-item nav-link" href="#access-1">Access</a>
+        <a class="nav-item nav-link" href="#contact-1">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="container position-relative ">
   <img style="padding-bottom:20px;" src="./top.jpg" />
@@ -50,33 +55,30 @@
   </p>
 </div>
 
-<div class="container position-relative　text-center">
+<div class="container position-relative　text-center ">
   <hr class="featurette-divider" />
 </div>
 
 <div class="container position-relative　text-center">
   <h1 style="margin-bottom:30px">様子</h1>
 </div>
-<div class="container position-relative　text-center d-flex">
-    <div class="card mx-2" style="width: 18rem;">
+<div class="container position-relative　text-center d-sm-flex justify-content-center">
+    <div class="card mx-2" style="width: 18rem; margin-bottom:20px">
     <img class="card-img-top" src="./CIMG2019.JPG" alt="Card image cap">
       <div class="card-body text-center">
         <p class="card-text">タッチケア教室</p>
-        <p class="card-title">2017/03/29</p>
       </div>
     </div>
-    <div class="card mx-2" style="width: 18rem;">
+    <div class="card mx-2" style="width: 18rem; margin-bottom:20px">
     <img class="card-img-top" src="./CIMG2002.JPG" alt="Card image cap">
       <div class="card-body text-center">
         <p class="card-text">タッチケア教室</p>
-        <p class="card-title">2017/03/29</p>
       </div>
     </div>
-    <div class="card mx-2" style="width: 18rem;" >
+    <div class="card mx-2" style="width: 18rem; margin-bottom:20px" >
     <img class="card-img-top" src="./CIMG2020.JPG" alt="Card image cap">
       <div class="card-body text-center">
         <p class="card-text">タッチケア教室</p>
-        <p class="card-title">2017/03/29</p>
       </div>
     </div>
 </div>
@@ -88,38 +90,32 @@
 <div class="container position-relative　text-center justify-content-center" style="margin-top:40px;margin-bottom:30px;">
   <h1 style="margin-bottom:30px" id="service-1">サービスメニュー</h1>
   <div class="row">
-
     <div class="col-lg-4 text-center" style="margin-bottom:30px;" >
       <img class="rounded-circle" src="./baby-02.jpg" width="140" height="140" style="margin-bottom:20px"/>
       <h3>個別相談</h3>
       <p class="description">
         母乳育児相談/乳幼児育児相談/思春期・妊産婦・更年期相談
       </p>
-      <button type="button" class="btn btn-success btn-bottom01" style="align-items: flex-end;">詳細を確認</button>
+      <button type="button" class="btn btn-success btn-bottom01" ><a href="#contact-1" style="color:#ffff">詳細はお気軽にご連絡ください</a></button>
     </div>
-
-  <div class="col-lg-4 text-center" style="margin-bottom:30px;">
-    <img class="rounded-circle" src="./baby-02.jpg" width="140" height="140" style="margin-bottom:20px"/>
-    <h3>タッチケア教室</h3>
-    <p class="description">タッチケアを通して、心と体の健やかな成長を助けます。植物性オイルを使用してマッサージを実習します。</p>
-    <button type="button" class="btn btn-success" style="align-items: flex-end;">詳細を確認</button>
-  </div>
-
-  <div class="col-lg-4 text-center" style="margin-bottom:30px;">
-    <img class="rounded-circle" src="./baby-02.jpg" width="140" height="140" style="margin-bottom:20px"/>
-    <h3>妊婦産婦操体教室</h3>
-    <p class="description">
-      食・息・動・想の法則により、自分自身で体の歪みを矯正し、頭痛や肩こり、腰痛、産後の回復、母乳の出や乳質をよくする操体法で、バランスよい体づくりを実習します。
-    </p>
-    <button type="button" class="btn btn-success btn-bottom01">詳細を確認</button>
-  </div>
-
+    <div class="col-lg-4 text-center" style="margin-bottom:30px;">
+      <img class="rounded-circle" src="./baby-02.jpg" width="140" height="140" style="margin-bottom:20px"/>
+      <h3>タッチケア教室</h3>
+      <p class="description">タッチケアを通して、心と体の健やかな成長を助けます。植物性オイルを使用してマッサージを実習します。</p>
+      <button type="button" class="btn btn-success btn-bottom01" href="#contact-1"><a href="#contact-1" style="color:#fff">詳細はお気軽にご連絡ください</a></button>
+    </div>
+    <div class="col-lg-4 text-center" style="margin-bottom:30px;">
+      <img class="rounded-circle" src="./baby-02.jpg" width="140" height="140" style="margin-bottom:20px"/>
+      <h3>妊婦産婦操体教室</h3>
+      <p class="description">
+        食・息・動・想の法則により、自分自身で体の歪みを矯正し、頭痛や肩こり、腰痛、産後の回復、母乳の出や乳質をよくする操体法で、バランスよい体づくりを実習します。
+      </p>
+      <button type="button" class="btn btn-success btn-bottom01" href="#contact-1"><a href="#contact-1" style="color:#ffff">詳細はお気軽にご連絡ください</a></button>
+    </div>
   </div>
 </div>
 
-<div class="container position-relative　text-center">
-  <hr class="featurette-divider" />
-</div>
+<div class="container position-relative　text-center"><hr class="featurette-divider" /></div>
 
 <div id="price-1" class="container position-relative" style="margin-top:40px;">
   <h1 style="margin-bottom:30px">サービス料金</h1>
@@ -133,11 +129,10 @@
     <div class="card-body">
       <h4 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4000円 </font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small></h4>
       <ul class="list-unstyled mt-3 mb-4">
-        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">※要予約</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">月曜日〜金曜日　<br />10時〜17時（要予約）<br />※フェイスタオル２枚持参</font></font></li>
       </ul>
     </div>
   </div>
-
   <div class="card mb-4 box-shadow text-center menu mx-auto">
     <div class="card-header">
       <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">タッチケア教室</font></font></h4>
@@ -145,11 +140,10 @@
     <div class="card-body">
       <h4 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3500円 </font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small></h4>
       <ul class="list-unstyled mt-3 mb-4">
-        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">※要予約</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第２・第４火曜日　<br />10時30分〜12時（要予約）<br />※バスタオル・親子手帳持参</font></font></li>
       </ul>
     </div>
   </div>
-
   <div class="card mb-4 box-shadow text-center menu mx-auto">
     <div class="card-header">
       <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">妊婦産婦操体教室</font></font></h4>
@@ -157,16 +151,13 @@
     <div class="card-body">
       <h4 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3500円</font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></small></h4>
       <ul class="list-unstyled mt-3 mb-4">
-        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">※要予約</font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第１・第３火曜日　<br />10時30分〜12時（要予約）<br />※バスタオル・親子手帳持参</font></font></li>
       </ul>
     </div>
   </div>
 </div>
 
-
-<div class="container position-relative　text-center">
-  <hr class="featurette-divider" />
-</div>
+<div class="container position-relative　text-center"><hr class="featurette-divider" /></div>
 
 <div id="access-1" class="container position-relative　text-center justify-content-center" style="margin-top:40px;">
   <h1 >アクセス</h1>
@@ -184,6 +175,7 @@
 <div id="contact-1" class="container position-relative　text-center justify-content-center" style="margin-top:40px;">
   <h1>連絡先</h1>
   <p>お気軽にご連絡ください。</p>
+
   <address>
     <i class="fa fa-envelope-o"></i> <a href="mailto:telmiharu226@docomo.ne.jp">telmiharu226@docomo.ne.jp</a>
   </address>
@@ -192,18 +184,17 @@
   </address>
 </div>
 
-<div class="container position-relative　text-center">
-  <hr class="featurette-divider" />
-</div>
+<div class="container position-relative　text-center"><hr class="featurette-divider" /></div>
 
 <footer class="container position-relative　text-center justify-content-center">
-  <p class="text-center">
-    © 2017-2018 母乳育児相談室 春 .
-  </p>
+  <p class="text-center">© 2017-2018 母乳育児相談室 春 .</p>
 </footer>
+<script type="text/javascript" src="./script.js"></script>
+
 </body>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
